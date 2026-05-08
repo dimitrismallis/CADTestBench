@@ -1,0 +1,62 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cadtestbench"
+version = "0.1.0"
+description = "Cadtest-based evaluation benchmark for CAD generation models."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+
+authors = [
+    { name = "Anonymous Authors" },
+]
+keywords = ["cad", "evaluation", "benchmark", "cadquery", "llm"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering",
+]
+
+dependencies = [
+    "cadquery>=2.4",
+    "numpy>=1.24",
+    "trimesh>=4.0",
+    "datasets>=2.14",
+    "pyarrow>=14",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff>=0.5",
+    "pytest>=8",
+]
+
+[project.scripts]
+cadtestbench = "cadtestbench.cli:main"
+
+[project.urls]
+# TODO: replace YOUR_ORG with the published GitHub org/user before release.
+Homepage = "https://github.com/YOUR_ORG/CADTestBench"
+Issues = "https://github.com/YOUR_ORG/CADTestBench/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+cadtestbench = ["py.typed"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = ["E501"]

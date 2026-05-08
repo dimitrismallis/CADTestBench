@@ -1,0 +1,43 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+pip-wheel-metadata/
+
+# Virtual envs
+.venv/
+venv/
+cadtestenv/
+env/
+.python-version
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Caches
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.cache/
+
+# Local data
+data/
+*.stl
+*.obj
+
+# Secrets
+.env
+*.local
