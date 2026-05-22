@@ -145,3 +145,16 @@ CADTestBench is loaded from **[dimitrismallis/CADTestBench](https://huggingface.
 ## License
 
 MIT — see [`LICENSE`](LICENSE).
+
+## Citation
+
+If you find this work useful for your research, please cite our paper:
+
+```
+@article{mallis2026cadtests,
+  title={Text-to-CAD Evaluation with CADTests},
+  author={Dimitrios Mallis and Marco Wang and Ahmet Serdar Karadeniz and Elisa Ricci and Anis Kacem and Djamila Aouada},
+  journal={arXiv preprint arXiv:2605.07807},
+  year={2026}
+}
+```
